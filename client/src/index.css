@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 0%);
+  --muted: hsl(0, 0%, 53.3%);
+  --muted-foreground: hsl(0, 0%, 53.3%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 0%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 0%);
+  --border: hsl(0, 0%, 89.8%);
+  --input: hsl(0, 0%, 89.8%);
+  --primary: hsl(162, 100%, 50%);
+  --primary-foreground: hsl(210, 100%, 99%);
+  --secondary: hsl(0, 0%, 96.1%);
+  --secondary-foreground: hsl(0, 0%, 9%);
+  --accent: hsl(162, 100%, 50%);
+  --accent-foreground: hsl(0, 0%, 9%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(0, 0%, 3.9%);
+  --radius: 0.5rem;
+  --dark: hsl(0, 0%, 6.7%);
+  --terminal: hsl(120, 100%, 50%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(162, 100%, 50%);
+  --primary-foreground: hsl(210, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Serif', serif;
+  }
+}
+
+@layer components {
+  .font-serif {
+    font-family: 'IBM Plex Serif', serif;
+  }
+  
+  .font-sans {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .text-accent {
+    color: #00FFB3;
+  }
+
+  .text-terminal {
+    color: #00FF75;
+  }
+
+  .text-dark {
+    color: #111111;
+  }
+
+  .text-muted {
+    color: #888888;
+  }
+
+  .bg-accent {
+    background-color: #00FFB3;
+  }
+
+  .bg-dark {
+    background-color: #111111;
+  }
+
+  .border-accent {
+    border-color: #00FFB3;
+  }
+
+  .hover\:text-accent:hover {
+    color: #00FFB3;
+  }
+
+  .hover\:border-accent:hover {
+    border-color: #00FFB3;
+  }
+
+  .grid-bg {
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 63px, #f0f0f0 64px);
+  }
+
+  .ascii-frog {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    opacity: 0.3;
+    color: #ccc;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    line-height: 1;
+    white-space: pre;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .code-block {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #00FF75;
+  }
+
+  .active-toc {
+    color: #00FFB3 !important;
+    font-weight: 600;
+  }
+
+  .toc-link {
+    transition: color 0.2s ease;
+  }
+
+  .toc-link:hover {
+    color: #00FFB3;
+  }
+}
