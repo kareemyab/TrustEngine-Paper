@@ -1,0 +1,42 @@
+You are to design the landing page in an early-2000s style homepage for my web3 startup, Trust Engine.
+
+––––  Brand  ––––
+• Tone → “protocol DAO”: confident, academic, hacker-minimal.
+• Palette → monochrome (#000, #111, #fff); one accent (#00FFB3) for links & CTA.
+• Typography →  
+  - Headlines: “IBM Plex Serif” 36/44/52px.  
+  - Body: “IBM Plex Sans” 18px, 1.6 line-height.  
+  - All caps section tags in 12px monospace (#888).
+
+––––  Layout  ––––
+1. Full-width, single scroll page.  
+2. Top block = ASCII frog watermark (in light grey, 30 % opacity) floated right.  
+3. Directly below: big **“Trust Engine - Zero-Knowledge Provenance Stamp on Digital Assets”** heading, date stamp, version.  
+4. Table-of-Contents side column (sticky) with anchor links:
+
+––––  Interaction  ––––
+• Anchor-jump on TOC click.  
+• Snappy-scroll behaviour  
+• Highlight active TOC item based on scroll position.
+
+––––  Aesthetic flourishes  ––––
+• Each section title prefixed with a tiny ascii diamond “✦”.  
+• Subtle vertical grid (light 1 px stripes every 64 px) behind body for retro feel
+• `<code>` blocks in 90 % black background, green text (#00FF75) to evoke terminal.  
+
+Sections to Include:
+    * Problem and Solution statement:
+        * Problem: “No one can reliably prove who owns or created digital assets online, leading to rampant theft, fraud, and loss of value.”
+        * Solution: “Trust Engine creates a universal, tamper-proof proof-of-origin and ownership layer for all digital assets—making trust, rights, and authenticity verifiable for everyone.”
+    * 5 Phase Roadmap (attached in this prompt as “Roadmap”)
+    * Introduction (attached in this prompt as “Introduction”)
+    * Tokenomics (attached in this prompt as “Tokenomics”)
+    * How to Earn on Trust Engine (attached in this prompt as “How to Earn”)
+    * Participation in Trust Engine’s Ecosystem (attached in this prompt as “Participation”)
+    * Solution (attached in this prompt as “Solution”)
+    * DAO Governance (attached in this prompt as “DAO Governance”)
+    * Join Community (with Mirror.xyz, Snapshot, Discord, Telegram, X, Farcaster links)
+    * Disclaimer (attached in this prompt as “Disclaimer”)
+
+Legal & Branding:
+- Footer must clearly display: © 2025 TE DevLab, Inc. All rights reserved. Registered in Delaware.
